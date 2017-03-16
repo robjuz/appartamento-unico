@@ -1,0 +1,59 @@
+body {
+    background: rgba(110,53,157,1);
+    background: -moz-linear-gradient(top, rgba(110,53,157,1) 0%, rgba(222,222,222,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(110,53,157,1)), color-stop(100%, rgba(222,222,222,1)));
+    background: -webkit-linear-gradient(top, rgba(110,53,157,1) 0%, rgba(222,222,222,1) 100%);
+    background: -o-linear-gradient(top, rgba(110,53,157,1) 0%, rgba(222,222,222,1) 100%);
+    background: -ms-linear-gradient(top, rgba(110,53,157,1) 0%, rgba(222,222,222,1) 100%);
+    background: linear-gradient(to bottom, rgba(110,53,157,1) 0%, rgba(222,222,222,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e359d', endColorstr='#dedede', GradientType=0 );
+    height: 100vh;
+}
+
+#menu {
+    margin-top: 50%;
+}
+
+#menu h2 {
+    margin: 0;
+}
+
+#menu li {
+    text-align: center;
+    list-style: none;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#menu .button {
+    background: rgba(110,53,157,1);
+    background: -moz-linear-gradient(top, rgba(110,53,157,1) 0%, rgba(222,222,222,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(110,53,157,1)), color-stop(100%, rgba(222,222,222,1)));
+    background: -webkit-linear-gradient(top, rgba(110,53,157,1) 0%, rgba(222,222,222,1) 100%);
+    background: -o-linear-gradient(top, rgba(110,53,157,1) 0%, rgba(222,222,222,1) 100%);
+    background: -ms-linear-gradient(top, rgba(110,53,157,1) 0%, rgba(222,222,222,1) 100%);
+    background: linear-gradient(to bottom, rgba(110,53,157,1) 0%, rgba(222,222,222,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e359d', endColorstr='#dedede', GradientType=0 );
+    width: 100%;
+    font-size: 2rem;
+    line-height: 2.6;
+    height: 50px;
+    margin: auto;
+}
+
+.content {
+    background: transparent;
+    -webkit-box-shadow: inset 0px 0px 2px 4px rgba(255,255,255,.2);
+    -moz-box-shadow: inset 0px 0px 2px 4px rgba(255,255,255,.2);
+    box-shadow: inset 0px 0px 2px 4px rgba(255,255,255,.2);
+
+    padding: 25px;
+    margin-top: 5vh;
+    height: 90vh;
+
+    text-align: center;
+}
+
+#homepage ol li {
+    margin: auto;
+}
