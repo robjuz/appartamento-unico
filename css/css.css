@@ -63,7 +63,13 @@ a{
     text-align: center;
 }
 
-#homepage ol li {
+.content h2{
+  text-align: left;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+#start ol li {
     margin: auto;
 }
 
