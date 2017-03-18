@@ -2,7 +2,7 @@ html, body, .container, .row, .column {
   height: 100%;
 }
 
-body, .box {
+body, .background, .box {
     background: rgba(110,53,157,1);
     background: -moz-linear-gradient(top, rgba(110,53,157,1) 0%, rgba(222,222,222,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(110,53,157,1)), color-stop(100%, rgba(222,222,222,1)));
@@ -11,6 +11,8 @@ body, .box {
     background: -ms-linear-gradient(top, rgba(110,53,157,1) 0%, rgba(222,222,222,1) 100%);
     background: linear-gradient(to bottom, rgba(110,53,157,1) 0%, rgba(222,222,222,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e359d', endColorstr='#dedede', GradientType=0 );
+
+
     color: #111;
     height: 100%;
 }
@@ -19,7 +21,33 @@ a{
   color: #111;
 }
 
+.box {
+    background: rgba(110,53,157,1);
+    background: -moz-linear-gradient(top, rgba(110,53,157,1) 0%, rgba(222,222,222,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(110,53,157,1)), color-stop(100%, rgba(222,222,222,1)));
+    background: -webkit-linear-gradient(top, rgba(110,53,157,1) 0%, rgba(222,222,222,1) 100%);
+    background: -o-linear-gradient(top, rgba(110,53,157,1) 0%, rgba(222,222,222,1) 100%);
+    background: -ms-linear-gradient(top, rgba(110,53,157,1) 0%, rgba(222,222,222,1) 100%);
+    background: linear-gradient(to bottom, rgba(110,53,157,1) 0%, rgba(222,222,222,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e359d', endColorstr='#dedede', GradientType=0 );
+
+    height:100%;
+    width: 100%;
+}
+
+.fixed {
+    position: fixed !important;
+}
+
 #menu {
+    /*position: absolute;*/
+    z-index: 10
+}
+
+#menu.fixed{
+    position: fixed;
+    width: inherit;
+    max-width: 294.4000000003px;
 }
 
 #menu h2 {
