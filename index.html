@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/css.css">
 
     <!-- Favicon
@@ -30,11 +31,7 @@
 
 </head>
 <body>
-<div id="logo">
-    <a href="#start">
-        <img src="images/logo.gif" alt="Home Staging Logo" title="wróc na stronę główną"/>
-    </a>
-</div>
+
 
 <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -48,6 +45,15 @@
         <a href="#partnerzy" class="button hvr-radial-out">partnerzy</a>
         <a href="#promocje" class="button hvr-radial-out">promocje</a>
         <a href="#opinie" class="button hvr-radial-out">opinie</a>
+    </div>
+</div>
+<div id="logo">
+    <div class="container">
+        <div class="logo-wrapper">
+            <a href="#start">
+                <img src="images/logo.gif" alt="Home Staging Logo" title="wróc na stronę główną"/>
+            </a>
+        </div>
     </div>
 </div>
 <div class="container">
@@ -111,9 +117,14 @@
                 <h2 class="animate" data-animation="slideUp">Kontakt</h2>
                 <div class="animate" data-animation="fadeIn">
                     <span class="headline">W razie pytań:</span>
-                    <span class="phone">TELEFON: 97095930</span>
-                    <span class="email">E-MAIL: appartamento_unico@gmail.com (odpisuję w godzinach 19-20)</span>
-                    <span class="skype">SKYPE: appartamento_unico (e-konsultacja)</span>
+                    <dl class="dl-horizontal">
+                        <dt class="phone"><i class="fa fa-phone"></i> TELEFON:</dt>
+                        <dd class="phone"><a href="tel:+4897095930">97095930</a></dd>
+                        <dt class="email"><i class="fa fa-envelope"></i> E-MAIL (odpisuję w godzinach 19-20)</dt>
+                        <dd class="email"><a href="mailto:appartamento_unico@gmail.com">appartamento_unico@gmail.com</a></dd>
+                        <dt class="skype"><i class="fa fa-skype"></i> SKYPE (e-konsultacja)</dt>
+                        <dd class="skype"><a href="skype:appartamento_unico?call">appartamento_unico</a></dd>
+                    </dl>
                 </div>
             </div>
         </div>
@@ -125,31 +136,45 @@
                 <div class="row">
                     <h3>kuchnia</h3>
                     <div class="one-third column">
+                        <a href="images/BRWkuch.jpg" data-lightbox="kuchnia" data-title="Przykładowa kuchnia 1">
                         <img class="u-max-full-width" src="images/BRWkuch.jpg" alt="Przykładowa kuchnia 1"/>
+                        </a>
                     </div>
                     <div class="one-third column">
+                        <a href="images/BRWkuchnia.jpg" data-lightbox="kuchnia" data-title="Przykładowa kuchnia 2">
                         <img class="u-max-full-width" src="images/BRWkuchnia.jpg" alt="Przykładowa kuchnia 2"/>
+                        </a>
                     </div>
                 </div>
                 <div class="row">
                     <h3>sypialnia</h3>
                     <div class="one-third column">
+                        <a href="images/BRWsypialnia.jpg" data-lightbox="sypialnia" data-title="Przykładowa sypialnia 1">
                         <img class="u-max-full-width" src="images/BRWsypialnia.jpg" alt="Przykładowa sypialnia 1"/>
+                        </a>
                     </div>
                     <div class="one-third column">
+                        <a href="images/muratordom.jpg" data-lightbox="sypialnia" data-title="Przykładowa sypialnia 2">
                         <img class="u-max-full-width" src="images/muratordom.jpg" alt="Przykładowa sypialnia 2"/>
+                        </a>
                     </div>
                 </div>
                 <div class="row">
                     <h3 class="animate slideUp">pokój/salon</h3>
                     <div class="one-third column">
+                        <a href="images/BRWnamiot.jpg" data-lightbox="pokoj" data-title="Przykładowy pokój 1">
                         <img class="u-max-full-width" src="images/BRWnamiot.jpg" alt="Przykładowy pokój 1"/>
+                        </a>
                     </div>
                     <div class="one-third column">
+                        <a href="images/czasnawnetrze.jpg" data-lightbox="pokoj" data-title="Przykładowy pokój 2">
                         <img class="u-max-full-width" src="images/czasnawnetrze.jpg" alt="Przykladowy pokój 2"/>
+                        </a>
                     </div>
                     <div class="one-third column">
+                        <a href="images/homesquare.jpg" data-lightbox="pokoj" data-title="Przykładowy pokój 3">
                         <img class="u-max-full-width" src="images/homesquare.jpg" alt="Przykładowy pokój 3"/>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -191,11 +216,11 @@
                 <h2 class="animate" data-animation="slideUp">Promocje</h2>
                 <div class="animate" data-animation="fadeIn">
                     <ul>
-                        <li>Dla pierwszych 10 klientów -30%</li>
-                        <li>Dla seniorów (65+) -20%</li>
-                        <li>Przy poleceniu znajomym -15% na kolejną usługę</li>
-                        <li>Dla stałych klientów -20% na kolejne usługi</li>
-                        <li>Zniżka u partnerów nawet do -30%</li>
+                        <li>Dla pierwszych 10 klientów <span class="promocja">-30%</span></li>
+                        <li>Dla seniorów (65+) <span class="promocja">-20%</span></li>
+                        <li>Przy poleceniu znajomym <span class="promocja">-15% na kolejną usługę</span></li>
+                        <li>Dla stałych klientów <span class="promocja">-20% na kolejne usługi</span></li>
+                        <li>Zniżka u partnerów nawet <span class="promocja">do -30%</span></li>
                     </ul>
                 </div>
             </div>
@@ -232,6 +257,7 @@
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/lightbox.min.js"></script>
 <script src="js/js.js"></script>
 </body>
 </html>

@@ -11,11 +11,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #logo {
+    z-index: 1000;
+}
+
+#logo .container {
+    position: relative;
+}
+
+#logo .logo-wrapper {
+    width: 100px;
+    position: absolute;
+    top: 89vh;
+    right: 10px;
+}
+
+#logo a {
     width: 100px;
     position: fixed;
-    bottom: 0px;
-    right: 10px;
-    z-index: 100;
+    z-index: 1000;
 }
 
 #logo img{
@@ -152,8 +165,6 @@ a{
 }
 
 #kontakt .phone, #kontakt .email, #kontakt .skype{
-  clear: left;
-  display: block;
 }
 
 #galeria h3{
@@ -220,7 +231,10 @@ a{
     content: "\f083"; /* FontAwesome Unicode */
 }
 
-
+.promocja {
+    font-size: 1.3em;
+    font-weight: bold;
+}
 
 
 
@@ -315,4 +329,19 @@ a{
 
 .animate {
     visibility: hidden;
+}
+
+.dl-horizontal dt {
+    float: left;
+    width: 45%;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dl-horizontal dd {
+    margin-left: 50%;
+    text-align: left;
 }
