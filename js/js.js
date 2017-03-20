@@ -4,28 +4,13 @@
 "use strict";
 
 $(document).ready(function () {
-    $(document).on("scroll", onScroll);
+    addAnimation();
+    smoothscroll();
 
-    //smoothscroll
-    $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
-
-        $('a').each(function () {
-            $(this).removeClass('active');
-        });
-        $(this).addClass('active');
-
-        var target = this.hash,
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top - $('#menu').height() +2
-        }, 500, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
-        });
-    });
 });
+
+$(window).scroll(addAnimation);
+$(window).scroll(onScroll);
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
@@ -38,6 +23,38 @@ function onScroll(event){
         }
         else{
             currLink.removeClass("active");
+        }
+    });
+}
+
+function smoothscroll() {
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+
+        $('a').each(function () {
+            $(this).removeClass('active');
+        });
+        $(this).addClass('active');
+
+        var target = this.hash,
+            $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - $('#menu').height() +2
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+}
+
+function addAnimation() {
+    $('.animate').each(function(){
+        var imagePos = $(this).closest('.content').offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if ((imagePos < topOfWindow+400)) {
+            $(this).addClass($(this).data('animation'));
         }
     });
 }

@@ -16,11 +16,12 @@
     <!-- FONT
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/css.css">
 
     <!-- Favicon
@@ -39,107 +40,117 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div id="menu">
     <div class="container">
-        <a href="#start" class="button active">strona główna</a>
-        <a href="#o_mnie" class="button">o mnie</a>
-        <a href="#kontakt" class="button">kontakt</a>
-        <a href="#galeria" class="button">galeria</a>
-        <a href="#oferta" class="button">oferta</a>
-        <a href="#partnerzy" class="button">partnerzy</a>
-        <a href="#promocje" class="button">promocje</a>
-        <a href="#opinie" class="button">opinie</a>
+        <a href="#start" class="button active hvr-radial-out">strona główna</a>
+        <a href="#o_mnie" class="button hvr-radial-out">o mnie</a>
+        <a href="#kontakt" class="button hvr-radial-out">kontakt</a>
+        <a href="#galeria" class="button hvr-radial-out">galeria</a>
+        <a href="#oferta" class="button hvr-radial-out">oferta</a>
+        <a href="#partnerzy" class="button hvr-radial-out">partnerzy</a>
+        <a href="#promocje" class="button hvr-radial-out">promocje</a>
+        <a href="#opinie" class="button hvr-radial-out">opinie</a>
     </div>
 </div>
 <div class="container">
     <div id="start" class="box">
         <div class="row">
             <div class="twelve columns content">
-                <h1><b><i>Appartamento unico</i></b></h1>
-                <h4><b><i>HOME STAGING<br>stylizowanie i fotografowanie mieszkań</i></b></h4>
-
-                <p>Dzięki moim usługom przy stosunkowo niewielkich kosztach i krótkim czasie możesz:</p>
-                <ol>
-                    <li>
-                        Oszczędzić mnóstwo czasu.
-                    </li>
-                    <li>
-                        Mieć piękne i praktyczne mieszkanie.
-                    </li>
-                    <li>
-                        Powiększyć grono potencjalnych klientów.
-                    </li>
-                    <li>
-                        Zwiększyć wartość swojej nieruchomości o 15%.
-                    </li>
-                    <li>
-                        Mieć pewność, że po skorzystaniu z pełnego pakietu usług znajdziesz w mgnieniu oka kupców.
-                    </li>
-                </ol>
+                <div class="animate" data-animation="slideUp">
+                    <h1><b><i>Appartamento unico</i></b></h1>
+                    <h4><b><i>HOME STAGING<br>stylizowanie i fotografowanie mieszkań</i></b></h4>
+                </div>
+                <div class="animate" data-animation="fadeIn">
+                    <p>Dzięki moim usługom przy stosunkowo niewielkich kosztach i krótkim czasie możesz:</p>
+                    <ol>
+                        <li>
+                            Oszczędzić mnóstwo czasu.
+                        </li>
+                        <li>
+                            Mieć piękne i praktyczne mieszkanie.
+                        </li>
+                        <li>
+                            Powiększyć grono potencjalnych klientów.
+                        </li>
+                        <li>
+                            Zwiększyć wartość swojej nieruchomości o 15%.
+                        </li>
+                        <li>
+                            Mieć pewność, że po skorzystaniu z pełnego pakietu usług znajdziesz w mgnieniu oka kupców.
+                        </li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
     <div id="o_mnie" class="box">
         <div class="row">
             <div class="twelve columns content">
-                <h2>O mnie</h2>
+                <h2 class="animate" data-animation="slideUp">O mnie</h2>
+                <div class="animate" data-animation="fadeIn">
+                    <span class="me">Magdalena Brodzka</span>
+                    <span class="about_me">Certyfikowana specjalistka <span
+                            class="home_staging">home stagingu</span></span>
 
-                <span class="me">Magdalena Brodzka</span>
-                <span class="about_me">Certyfikowana specjalistka <span
-                        class="home_staging">home stagingu</span></span>
+                    <img src="images/magdalena_brodzka.jpg" alt="Magdalena Brodzka"/>
 
-                <img src="images/magdalena_brodzka.jpg" alt="Magdalena Brodzka"/>
+                    <p>Jestem młoda, ambitna i kreatywna. Nie ma dla mnie rzeczy niemożliwych. Potrafię przemienić każde
+                        miejsce w wyjątkowy zakątek.</p>
+                    <p>Jestem absolwentką Instytutu Fotografii Kreatywnej Wydziału Filozofii i Nauki Uniwersytetu
+                        Śląskiego
+                        w Opawie, Wyższej Szkoły Sztuki i Projektowania w Łodzi oraz Akademii Sztuk Pięknych na Wydziale
+                        Architektury Wnętrz i Wzornictwa we Wrocławiu. Pracowałam u boku wybitnego fotografa.
+                        Uczestniczyłam
+                        w wielu projektach agencji nieruchomości.</p>
 
-                <p>Jestem młoda, ambitna i kreatywna. Nie ma dla mnie rzeczy niemożliwych. Potrafię przemienić każde
-                    miejsce w wyjątkowy zakątek.</p>
-                <p>Jestem absolwentką Instytutu Fotografii Kreatywnej Wydziału Filozofii i Nauki Uniwersytetu Śląskiego
-                    w Opawie, Wyższej Szkoły Sztuki i Projektowania w Łodzi oraz Akademii Sztuk Pięknych na Wydziale
-                    Architektury Wnętrz i Wzornictwa we Wrocławiu. Pracowałam u boku wybitnego fotografa. Uczestniczyłam
-                    w wielu projektach agencji nieruchomości.</p>
+                </div>
             </div>
         </div>
     </div>
     <div id="kontakt" class="box">
         <div class="row">
             <div class="twelve columns content">
-                <h2>Kontakt</h2>
-
-                <span class="headline">W razie pytań:</span>
-                <span class="phone">TELEFON: 97095930</span>
-                <span class="email">E-MAIL: appartamento_unico@gmail.com (odpisuję w godzinach 19-20)</span>
-                <span class="skype">SKYPE: appartamento_unico (e-konsultacja)</span>
+                <h2 class="animate" data-animation="slideUp">Kontakt</h2>
+                <div class="animate" data-animation="fadeIn">
+                    <span class="headline">W razie pytań:</span>
+                    <span class="phone">TELEFON: 97095930</span>
+                    <span class="email">E-MAIL: appartamento_unico@gmail.com (odpisuję w godzinach 19-20)</span>
+                    <span class="skype">SKYPE: appartamento_unico (e-konsultacja)</span>
+                </div>
             </div>
         </div>
     </div>
     <div id="galeria" class="box">
         <div class="content">
-            <h2>Galeria</h2>
-            <div class="row">
-                <h3>kuchnia</h3>
-                <div class="one-third column">
-                    <img class="u-max-full-width" src="images/BRWkuch.jpg" alt="Przykładowa kuchnia 1"/>
+            <h2 class="animate" data-animation="slideUp">Galeria</h2>
+            <div class="animate" data-animation="fadeIn">
+                <div class="row">
+                    <h3>kuchnia</h3>
+                    <div class="one-third column">
+                        <img class="u-max-full-width" src="images/BRWkuch.jpg" alt="Przykładowa kuchnia 1"/>
+                    </div>
+                    <div class="one-third column">
+                        <img class="u-max-full-width" src="images/BRWkuchnia.jpg" alt="Przykładowa kuchnia 2"/>
+                    </div>
                 </div>
-                <div class="one-third column">
-                    <img class="u-max-full-width" src="images/BRWkuchnia.jpg" alt="Przykładowa kuchnia 2"/>
+                <div class="row">
+                    <h3>sypialnia</h3>
+                    <div class="one-third column">
+                        <img class="u-max-full-width" src="images/BRWsypialnia.jpg" alt="Przykładowa sypialnia 1"/>
+                    </div>
+                    <div class="one-third column">
+                        <img class="u-max-full-width" src="images/muratordom.jpg" alt="Przykładowa sypialnia 2"/>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <h3>sypialnia</h3>
-                <div class="one-third column">
-                    <img class="u-max-full-width" src="images/BRWsypialnia.jpg" alt="Przykładowa sypialnia 1"/>
-                </div>
-                <div class="one-third column">
-                    <img class="u-max-full-width" src="images/muratordom.jpg" alt="Przykładowa sypialnia 2"/>
-                </div>
-            </div>
-            <div class="row">
-                <h3>pokój/salon</h3>
-                <div class="one-third column">
-                    <img class="u-max-full-width" src="images/BRWnamiot.jpg" alt="Przykładowy pokój 1"/>
-                </div>
-                <div class="one-third column">
-                    <img class="u-max-full-width" src="images/czasnawnetrze.jpg" alt="Przykladowy pokój 2"/>
-                </div>
-                <div class="one-third column">
-                    <img class="u-max-full-width" src="images/homesquare.jpg" alt="Przykładowy pokój 3"/>
+                <div class="row">
+                    <h3 class="animate slideUp">pokój/salon</h3>
+                    <div class="one-third column">
+                        <img class="u-max-full-width" src="images/BRWnamiot.jpg" alt="Przykładowy pokój 1"/>
+                    </div>
+                    <div class="one-third column">
+                        <img class="u-max-full-width" src="images/czasnawnetrze.jpg" alt="Przykladowy pokój 2"/>
+                    </div>
+                    <div class="one-third column">
+                        <img class="u-max-full-width" src="images/homesquare.jpg" alt="Przykładowy pokój 3"/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -147,63 +158,69 @@
     <div id="oferta" class="box">
         <div class="row">
             <div class="twelve columns content">
-                <h2>Oferta *</h2>
-                <ul>
-                    <li>Konsultacja 200zł</li>
-                    <li>Konsultacja + raport pisemny 500zł</li>
-                    <li>E-konsultacja 150zł</li>
-                    <li>Fotografowanie 500zł</li>
-                    <li>Pełne zarządzanie projektem ok. 2% wartości nieruchomości</li>
-                </ul>
+                <h2 class="animate" data-animation="slideUp">Oferta *</h2>
+                <div class="animate" data-animation="fadeIn">
+                    <ul>
+                        <li>Konsultacja 200zł</li>
+                        <li>Konsultacja + raport pisemny 500zł</li>
+                        <li>E-konsultacja 150zł</li>
+                        <li>Fotografowanie 500zł</li>
+                        <li>Pełne zarządzanie projektem ok. 2% wartości nieruchomości</li>
+                    </ul>
 
-                <span class="side_note">*cena dotyczy mieszkań do 100m2</span>
+                    <span class="side_note">*cena dotyczy mieszkań do 100m2</span>
+                </div>
             </div>
         </div>
     </div>
     <div id="partnerzy" class="box">
         <div class="row">
             <div class="twelve columns content">
-                <h2>Partnerzy</h2>
-                <img src="images/home_and_you.jpg" alt="home&amp;you Logo"/>
-                <img src="images/black_red_white.jpg" alt="Black Red White Logo"/>
-                <img src="images/leroy_merlin.jpg" alt="Leroy Merlin Logo"/>
+                <h2 class="animate" data-animation="slideUp">Partnerzy</h2>
+                <div class="animate" data-animation="fadeIn">
+                    <img src="images/home_and_you.jpg" alt="home&amp;you Logo"/>
+                    <img src="images/black_red_white.jpg" alt="Black Red White Logo"/>
+                    <img src="images/leroy_merlin.jpg" alt="Leroy Merlin Logo"/>
+                </div>
             </div>
         </div>
     </div>
     <div id="promocje" class="box">
         <div class="row">
             <div class="twelve columns content">
-                <h2>Promocje</h2>
-                <ul>
-                    <li>Dla pierwszych 10 klientów -30%</li>
-                    <li>Dla seniorów (65+) -20%</li>
-                    <li>Przy poleceniu znajomym -15% na kolejną usługę</li>
-                    <li>Dla stałych klientów -20% na kolejne usługi</li>
-                    <li>Zniżka u partnerów nawet do -30%</li>
-                </ul>
+                <h2 class="animate" data-animation="slideUp">Promocje</h2>
+                <div class="animate" data-animation="fadeIn">
+                    <ul>
+                        <li>Dla pierwszych 10 klientów -30%</li>
+                        <li>Dla seniorów (65+) -20%</li>
+                        <li>Przy poleceniu znajomym -15% na kolejną usługę</li>
+                        <li>Dla stałych klientów -20% na kolejne usługi</li>
+                        <li>Zniżka u partnerów nawet do -30%</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
     <div id="opinie" class="box">
         <div class="row">
             <div class="twelve columns content">
-                <h2>Opinie</h2>
-                <div class="opinion">
+                <h2 class="animate" data-animation="slideUp">Opinie</h2>
+                <div class="opinion animate" data-animation="slideLeft">
                     <span class="author">Separli:</span>
                     <span class="text">Piękne zdjęcia</span>
                 </div>
 
-                <div class="opinion">
+                <div class="opinion animate" data-animation="slideRight">
                     <span class="author">Possoni:</span>
                     <span class="text">Bardzo miła i kreatywna dziewczyna ;)</span>
                 </div>
 
-                <div class="opinion">
+                <div class="opinion animate" data-animation="slideLeft">
                     <span class="author">Fabrinowska:</span>
                     <span class="text">Dziękuję za nieocenioną pomoc.</span>
                 </div>
 
-                <div class="opinion">
+                <div class="opinion animate" data-animation="slideRight">
                     <span class="author">Hiciński:</span>
                     <span class="text">Polecam!</span>
                 </div>
