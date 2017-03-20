@@ -17,8 +17,7 @@ $(document).ready(function () {
         $(this).addClass('active');
 
         var target = this.hash,
-            menu = target;
-        var $target = $(target);
+        $target = $(target);
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top - $('#menu').height() +2
         }, 500, 'swing', function () {
